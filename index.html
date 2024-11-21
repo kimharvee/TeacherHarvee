@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harvee Agravante Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* General Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
-            overflow-x: hidden;
         }
         header {
-            background: #333;
+            background: linear-gradient(135deg, #333, #555);
             color: #fff;
-            padding: 1rem 0;
+            padding: 2rem 1rem;
             text-align: center;
         }
         header h1 {
             margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
         }
         nav {
             background: #444;
             text-align: center;
-            padding: 0.5rem 0;
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             color: #fff;
@@ -39,59 +48,46 @@
             text-decoration: underline;
         }
         section {
-            padding: 1rem 2rem;
-            max-width: 800px;
+            padding: 2rem 1rem;
+            max-width: 900px;
             margin: auto;
-            opacity: 0;
-            animation: fadeIn 1.2s forwards;
         }
         .section-title {
             text-align: center;
-            margin: 2rem 0 1rem;
-            font-size: 1.5rem;
-            color: #444;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #333;
         }
 
-        /* Profile Card */
+        /* Profile Section */
         .profile-card {
             background: #fff;
             margin: 2rem auto;
-            padding: 1rem;
+            padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .profile-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         }
         .profile-card img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
             margin: 1rem 0;
-            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-        }
-        .profile-card img:hover {
-            transform: rotate(360deg) scale(1.1);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
 
-        /* Lists for Skills, Experience, and Projects */
-        .skills-list, .experience-list, .future-projects-list {
+        /* Skills, Experience, and Projects */
+        .list-group {
             list-style: none;
             padding: 0;
         }
-        .skills-list li, .experience-list li, .future-projects-list li {
+        .list-group li {
             background: #fff;
             margin: 1rem 0;
             padding: 1rem;
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .skills-list li:hover, .experience-list li:hover, .future-projects-list li:hover {
+        .list-group li:hover {
             transform: scale(1.03);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
@@ -105,37 +101,11 @@
             margin-top: 2rem;
         }
 
-        /* Animations */
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-
         /* Responsive Design */
         @media (max-width: 768px) {
-            body {
-                font-size: 14px;
-            }
-            .profile-card img {
-                width: 120px;
-                height: 120px;
-            }
-            section {
-                padding: 1rem;
-            }
             nav a {
                 margin: 0 0.5rem;
                 font-size: 0.9rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .section-title {
-                font-size: 1.2rem;
-            }
-            .profile-card {
-                padding: 0.8rem;
             }
         }
     </style>
@@ -149,29 +119,37 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#future-projects">Future Projects</a>
         <a href="#contact">Contact</a>
     </nav>
-    <section>
+    <section id="profile">
         <div class="profile-card">
-            <img src="448326291_1254513192590697_9165631557151247967_n.jpg" alt="Profile Picture">
+            <!-- Update this to match your actual image path -->
+            <!-- Option 1: For local testing -->
+            <!-- <img src="462549815_1740672126689123_1363729530053932610_n.jpg" alt="Profile Picture" loading="lazy"> -->
+
+            <!-- Option 2: Using absolute path (for local system testing only) -->
+            <!-- <img src="file:///C:/Users/harve/OneDrive/Documents/CV/462549815_1740672126689123_1363729530053932610_n.jpg" alt="Profile Picture" loading="lazy"> -->
+
+            <!-- Option 3: Hosted online (replace with your actual hosted image link) -->
+            <img src="https://your-image-host.com/path-to-image.jpg" alt="Profile Picture" loading="lazy">
+
             <h2>Harvee Agravante</h2>
             <p>Educator | Science Enthusiast | Aspiring Developer</p>
+            <p>Languages: <strong>English (C2), German (B1), Spanish (A2), Thai</strong></p>
         </div>
     </section>
     <section id="skills">
         <h2 class="section-title">Skills and Expertise</h2>
-        <ul class="skills-list">
+        <ul class="list-group">
             <li><strong>Programming Languages:</strong> Python, JavaScript (Learning)</li>
             <li><strong>Web Development:</strong> Basic HTML, CSS, and JavaScript</li>
             <li><strong>Data Analysis:</strong> Excel, pandas (exploring)</li>
             <li><strong>Educational Technology:</strong> Google Classroom, Canvas, Magic School AI</li>
-            <li><strong>Languages:</strong> English (C2), German (Intermediate), Spanish (Elementary), Thai (Conversational)</li>
         </ul>
     </section>
     <section id="experience">
         <h2 class="section-title">Professional Experience</h2>
-        <ul class="experience-list">
+        <ul class="list-group">
             <li>
                 <strong>Multidisciplinary Science Educator</strong> – Sisaket Wittayalai School, Thailand (May 2024 - Aug 2024)
                 <p>Increased engagement by 20% through experiments and digital tools.</p>
@@ -186,24 +164,12 @@
             </li>
         </ul>
     </section>
-    <section id="future-projects">
-        <h2 class="section-title">Future Client Projects</h2>
-        <ul class="future-projects-list">
-            <li>
-                <strong>Educational Technology Platforms:</strong> Build AI-enhanced learning tools and interactive STEM simulations for schools using Code Nexus.
-            </li>
-            <li>
-                <strong>Web Development for Small Businesses:</strong> Create custom websites for schools and training centers with CMS and responsive design.
-            </li>
-            <li>
-                <strong>AI-Powered Education Tools:</strong> Develop chatbots and AI-driven dashboards to improve student engagement and track performance.
-            </li>
-            <li>
-                <strong>Environmental Awareness Campaigns:</strong> Design tools like carbon footprint calculators and ecosystem simulation platforms.
-            </li>
-            <li>
-                <strong>Self-Paced Learning Apps:</strong> Create apps to teach biology, programming, or languages through interactive lessons and gamification.
-            </li>
+    <section id="projects">
+        <h2 class="section-title">Future Projects</h2>
+        <ul class="list-group">
+            <li><strong>Educational Technology Platforms:</strong> AI-enhanced STEM simulations for schools.</li>
+            <li><strong>AI-Powered Education Tools:</strong> Chatbots and dashboards for student engagement.</li>
+            <li><strong>Environmental Awareness Campaigns:</strong> Carbon footprint calculators and ecosystem simulations.</li>
         </ul>
     </section>
     <section id="contact">

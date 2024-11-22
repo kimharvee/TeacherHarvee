@@ -3,117 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Harvee Agravante - Educator and Innovator">
-    <meta name="keywords" content="Educator, Portfolio, Science Teacher, AI, Curriculum Design">
-    <meta name="author" content="Harvee Agravante">
-    <title>Harvee Agravante - Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Harvee Agravante CV</title>
+    <style>
+        /* Define reusable color variables */
+        :root {
+            --primary-color: #0044cc;
+            --secondary-color: #ff9800;
+            --text-color: #333;
+            --background-color: #f9f9f9;
+            --white: #fff;
+        }
+
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+            background: var(--background-color);
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: slideIn 0.8s ease-in-out;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary-color);
+            bottom: -5px;
+            left: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: var(--text-color);
+        }
+
+        .experience-item p {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .experience-item span {
+            font-weight: bold;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
+    <div class="container">
+        <!-- Header Section -->
+        <header>
             <h1>Harvee Agravante</h1>
             <p>Sri Racha, Chonburi, Thailand</p>
-            <p>Email: <a href="mailto:w248999@gmail.com">w248999@gmail.com</a> | Phone: <a href="tel:+66948978889">+66 948 978 889</a></p>
-        </div>
-    </header>
+            <p>Email: w248999@gmail.com | Phone: +66948978889</p>
+        </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#license">Teaching License</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a dynamic and dedicated Educator with over 7 years of experience specializing in Science and English instruction for secondary students. Skilled in developing interactive and technology-driven curricula across disciplines, including Biology, Chemistry, and Earth Science, while fostering critical thinking and student engagement. Known for creating student-centered environments that drive both academic and personal growth, with measurable improvements in student performance.
-            </p>
+        <!-- Professional Summary -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Dynamic and dedicated Educator with over 7 years of experience specializing in Science and English instruction for secondary students. Skilled in developing interactive and technology-driven curricula across disciplines, including Biology, Chemistry, and Earth Science, while fostering critical thinking and student engagement.</p>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
             <ul>
-                <li><strong>Programming:</strong> Python, JavaScript, HTML, CSS, foundational object-oriented programming, algorithms.</li>
-                <li><strong>Web Development:</strong> Basic knowledge of HTML, CSS, and JavaScript.</li>
-                <li><strong>Data Analysis:</strong> Microsoft Excel, Python libraries (pandas).</li>
-                <li><strong>Version Control:</strong> Git and GitHub.</li>
-                <li><strong>Educational Tools:</strong> Google Classroom, Canvas, Magic School AI.</li>
-                <li><strong>Languages:</strong> English (C2), Spanish (Elementary), German (Intermediate), Thai (Conversational).</li>
+                <li>Programming Languages: Python, JavaScript, foundational OOP and algorithms.</li>
+                <li>Web Development: Basic knowledge of HTML, CSS, JavaScript.</li>
+                <li>Data Analysis: Proficiency in Excel, pandas library for visualization.</li>
+                <li>Version Control: Git and GitHub.</li>
+                <li>Problem-Solving: Advanced debugging and logical thinking skills.</li>
             </ul>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-event">
-                    <h3>Multidisciplinary Science Educator | Sisaket Wittayalai School</h3>
-                    <p><strong>May 2024 – August 2024</strong></p>
-                    <p>Designed and delivered curricula in Biology, Chemistry, Geology, and Astronomy, enhancing student engagement by 20% through multimedia integration and interactive labs.</p>
-                </div>
-                <div class="timeline-event">
-                    <h3>Multidisciplinary Science Educator | Darasamutr Sri Racha School</h3>
-                    <p><strong>May 2023 – May 2024</strong></p>
-                    <p>Incorporated AI tools and real-world applications into the curriculum, achieving a 30% improvement in scientific literacy and student engagement.</p>
-                </div>
-                <div class="timeline-event">
-                    <h3>Multidisciplinary Educator (English and Science) | Mathayom Watmai Krongtong School</h3>
-                    <p><strong>March 2022 – March 2023</strong></p>
-                    <p>Enhanced student participation by 25% through project-based learning and cross-disciplinary activities.</p>
-                </div>
-                <div class="timeline-event">
-                    <h3>Multidisciplinary Educator (English and Science) | St. Michael's Academy</h3>
-                    <p><strong>April 2019 – May 2022</strong></p>
-                    <p>Integrated interactive experiments and technology, fostering a 20% improvement in classroom performance.</p>
-                </div>
-                <div class="timeline-event">
-                    <h3>Homeroom and Science Teacher | Culipapa National High School</h3>
-                    <p><strong>June 2017 – April 2019</strong></p>
-                    <p>Fostered an inclusive classroom environment, emphasizing curiosity and academic resilience.</p>
-                </div>
+        <!-- Professional Experience -->
+        <section>
+            <h2>Professional Experience</h2>
+            <div class="experience-item">
+                <h3>Multidisciplinary Science Educator</h3>
+                <p>Sisaket Wittayalai School – Sisaket, Thailand</p>
+                <span>May 2024 – August 2024</span>
+                <p>• Designed and delivered curricula in Biology, Chemistry, Geology, and Astronomy, utilizing hands-on experiments and interactive digital tools to enhance student comprehension.</p>
+                <p>• Led a 20% increase in classroom engagement through multimedia integration, interactive labs, and tailored assessments.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Multidisciplinary Science Educator</h3>
+                <p>Darasamutr Sri Racha School – Sri Racha, Chonburi, Thailand</p>
+                <span>May 2023 – May 2024</span>
+                <p>• Delivered comprehensive Biology instruction for secondary students, incorporating AI tools and advanced educational technology to tailor learning experiences and boost engagement.</p>
+                <p>• Achieved a 30% improvement in scientific literacy through digital simulations and interactive platforms.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Multidisciplinary Educator (English and Science)</h3>
+                <p>Mathayom Watmai Krongtong School – Si Mahaphot, Prachin Buri, Thailand</p>
+                <span>March 2022 – March 2023</span>
+                <p>• Provided instruction in Biological Science and English Language, enhancing student engagement through project-based learning and cross-disciplinary activities.</p>
+                <p>• Increased student participation in science competitions by 25% and secured awards at the regional level.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Multidisciplinary Educator (English and Science)</h3>
+                <p>St. Michael's Academy – Negros Occidental, Philippines</p>
+                <span>April 2019 – May 2022</span>
+                <p>• Taught Biology and English with a focus on interactive experiments and individualized instruction for diverse learning needs.</p>
+                <p>• Fostered academic excellence, achieving several awards in science fairs.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Homeroom and Science Teacher</h3>
+                <p>Culipapa National High School – Negros Occidental, Philippines</p>
+                <span>June 2017 – April 2019</span>
+                <p>• Provided foundational education in science and supported student growth through hands-on learning activities.</p>
+                <p>• Fostered an inclusive classroom environment encouraging curiosity and academic resilience.</p>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education">
+        <!-- Education -->
+        <section>
             <h2>Education</h2>
             <ul>
-                <li>Master of Arts in Education (Biology Teaching) – Currently Enrolled, Marinduque State College, Philippines</li>
-                <li>Bachelor of Secondary Education (Major in Biological Sciences), University of Negros Occidental-Recoletos, Philippines</li>
-                <li>Self-paced learning: Codecademy, FreeCodeCamp (Python, JavaScript, algorithms).</li>
+                <li>Master of Arts in Education (Biology Teaching) – (42 units, currently enrolled) – Marinduque State College, Philippines</li>
+                <li>Bachelor of Secondary Education (Major in Biological Sciences) – University of Negros Occidental-Recoletos, Philippines</li>
+                <li>Introduction to Programming and Computer Science – Codecademy, FreeCodeCamp</li>
             </ul>
         </section>
 
-        <!-- Teaching License Section -->
-        <section id="license">
-            <h2>Teaching License</h2>
-            <p><strong>Professional Teaching License (Philippines)</strong></p>
-            <p>License Number: PRC 1212304</p>
+        <!-- Skills -->
+        <section>
+            <h2>Additional Skills</h2>
+            <ul>
+                <li>Languages: English (C2), German (Intermediate), Spanish (Elementary).</li>
+                <li>Tools: Google Classroom, Magic School AI, Smartboards.</li>
+                <li>Certifications: Professional Teaching License (Philippines).</li>
+            </ul>
         </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:w248999@gmail.com">w248999@gmail.com</a></p>
-            <p>Phone: <a href="tel:+66948978889">+66 948 978 889</a></p>
-            <a href="docs/Harvee_Agravante_CV.pdf" class="download-btn" download>Download My CV</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Harvee Agravante. All rights reserved.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+    </div>
 </body>
 </html>
